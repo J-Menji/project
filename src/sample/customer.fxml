@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.CustomerController">
+   <children>
+      <Label layoutX="40.0" layoutY="34.0" text="CUSTOMER">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Label>
+      <TableView layoutX="40.0" layoutY="79.0" prefHeight="247.0" prefWidth="525.0">
+        <columns>
+          <TableColumn prefWidth="90.0" text="Customer ID" />
+          <TableColumn prefWidth="75.0" text="Name " />
+            <TableColumn prefWidth="75.0" text="Address" />
+            <TableColumn prefWidth="75.0" text="Postal Code" />
+            <TableColumn prefWidth="75.0" text="Division" />
+            <TableColumn prefWidth="75.0" text="Phone" />
+        </columns>
+      </TableView>
+      <Button fx:id="addButton" layoutX="40.0" layoutY="347.0" mnemonicParsing="false" onAction="#addButtonClicked" prefHeight="25.0" prefWidth="55.0" text="Add" />
+      <Button fx:id="modifyButton" layoutX="105.0" layoutY="347.0" mnemonicParsing="false" onAction="#modifyButtonClicked" prefHeight="25.0" prefWidth="55.0" text="Modify" />
+      <Button fx:id="deleteButton" layoutX="170.0" layoutY="347.0" mnemonicParsing="false" onAction="#deleteButtonClicked" prefHeight="25.0" prefWidth="55.0" text="Delete" />
+      <Button fx:id="backButton" layoutX="513.0" layoutY="347.0" mnemonicParsing="false" onAction="#backButtonClicked" prefHeight="25.0" prefWidth="55.0" text="Back" />
+   </children>
+</AnchorPane>

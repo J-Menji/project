@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="475.0" prefWidth="885.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.AppointmentsController">
+   <children>
+      <TableView layoutX="40.0" layoutY="112.0" prefHeight="304.0" prefWidth="809.0">
+        <columns>
+          <TableColumn prefWidth="98.0" text="Apointment ID" />
+          <TableColumn prefWidth="50.0" text="Title" />
+            <TableColumn prefWidth="75.0" text="Description" />
+            <TableColumn prefWidth="75.0" text="Location" />
+            <TableColumn prefWidth="75.0" text="Contact" />
+            <TableColumn prefWidth="50.0" text="Type" />
+            <TableColumn prefWidth="110.0" text="Start Date/Time" />
+            <TableColumn prefWidth="110.0" text="End Date/Time" />
+            <TableColumn prefWidth="81.0" text="Customer ID" />
+            <TableColumn prefWidth="83.0" text="User ID" />
+        </columns>
+      </TableView>
+      <Label layoutX="40.0" layoutY="29.0" text="APPOINTMENTS">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="addButton" layoutX="40.0" layoutY="422.0" mnemonicParsing="false" onAction="#addButtonClicked" prefHeight="25.0" prefWidth="55.0" text="Add" />
+      <Button fx:id="modifyButton" layoutX="116.0" layoutY="422.0" mnemonicParsing="false" onAction="#modifyButtonCLicked" prefHeight="25.0" prefWidth="55.0" text="Modify" />
+      <Button fx:id="deleteButton" layoutX="185.0" layoutY="422.0" mnemonicParsing="false" onAction="#deleteButtonClicked" prefHeight="25.0" prefWidth="55.0" text="Delete" />
+      <Button fx:id="backButton" layoutX="797.0" layoutY="422.0" mnemonicParsing="false" onAction="#backButtonClicked" prefHeight="25.0" prefWidth="55.0" text="Back" />
+      <RadioButton layoutX="40.0" layoutY="81.0" mnemonicParsing="false" text="RadioButton" />
+      <RadioButton layoutX="134.0" layoutY="81.0" mnemonicParsing="false" text="RadioButton" />
+      <RadioButton layoutX="228.0" layoutY="81.0" mnemonicParsing="false" text="RadioButton" />
+   </children>
+</AnchorPane>

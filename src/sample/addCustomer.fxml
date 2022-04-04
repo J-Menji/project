@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="450.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.AddCustomerController">
+   <children>
+      <Label layoutX="31.0" layoutY="30.0" text="ADD CUSTOMER">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="40.0" layoutY="80.0" text="Customer ID" />
+      <Label layoutX="40.0" layoutY="125.0" text="Name" />
+      <Label layoutX="40.0" layoutY="305.0" text="Phone #" />
+      <Label layoutX="40.0" layoutY="170.0" text="Address" />
+      <Label layoutX="40.0" layoutY="215.0" text="Country" />
+      <Label layoutX="40.0" layoutY="260.0" text="Division" />
+      <Label layoutX="233.0" layoutY="215.0" text="Poatal Code" />
+      <ComboBox layoutX="115.0" layoutY="215.0" prefHeight="25.0" prefWidth="81.0" />
+      <ComboBox layoutX="324.0" layoutY="215.0" prefHeight="25.0" prefWidth="81.0" />
+      <TextField layoutX="115.0" layoutY="80.0" />
+      <TextField layoutX="115.0" layoutY="125.0" />
+      <TextField layoutX="115.0" layoutY="170.0" prefHeight="25.0" prefWidth="291.0" />
+      <TextField layoutX="115.0" layoutY="305.0" />
+      <TextField layoutX="115.0" layoutY="260.0" />
+      <Button fx:id="addButton" layoutX="289.0" layoutY="366.0" mnemonicParsing="false" onAction="#addButtonClicked" prefHeight="25.0" prefWidth="50.0" text="Add" />
+      <Button fx:id="backButton" layoutX="365.0" layoutY="366.0" mnemonicParsing="false" onAction="#backButtonClicked" prefHeight="25.0" prefWidth="50.0" text="Back" />
+   </children>
+</AnchorPane>
